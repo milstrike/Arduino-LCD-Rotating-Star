@@ -15,10 +15,11 @@
 LiquidCrystal_I2C lcd(I2C_ADDR,En_pin,Rw_pin,Rs_pin,D4_pin,D5_pin,D6_pin,D7_pin);
 
 // ---------------------- INSTANT SETTING --------------------
-String character = "*";
-int a = 0;
-int b = 0;
-int delays = 50;
+String character = "*"; //make sure there's no white space before or after the character.
+int a = 0; // don't change this line
+int b = 0; // don't change this line
+int delays = 50; // in millis
+//----------------------- INSTANT SETTING ---------------------
 
 void setup() {
   lcd.begin (16,2); 
